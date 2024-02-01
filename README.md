@@ -7,3 +7,5 @@ Steps:
 ```
 gcloud run deploy <SERVICES> --port 5000 --source .
 ```
+
+Change <SERVICES> with your preferable name.
