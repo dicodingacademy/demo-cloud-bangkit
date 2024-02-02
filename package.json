@@ -1,23 +1,16 @@
 {
-  "name": "notes-app-back-end",
+  "name": "demo-firestore",
   "version": "1.0.0",
-  "description": "",
+  "description": "Steps:\r 1. Clone this repo.\r 2. Run this syntax using gcloud:\r ```\r gcloud run deploy <SERVICES> --port 5000 --source .\r ```",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "lint": "eslint ."
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "upload": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "eslint": "^7.21.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1",
-    "nodemon": "^2.0.7"
-  },
   "dependencies": {
-    "@hapi/hapi": "^20.1.0",
-    "nanoid": "^3.1.20"
+    "@google-cloud/firestore": "^7.3.0"
   }
 }

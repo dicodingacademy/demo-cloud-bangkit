@@ -3,9 +3,15 @@
 
 Steps:
 1. Clone this repo.
-2. Run this syntax using gcloud:
+2. Set up Application Default Credentials (ADC) for Google Cloud Client Libraries.
 ```
-gcloud run deploy <SERVICES> --port 5000 --source .
+gcloud auth application-default login
 ```
-
-Change `<SERVICES>` with your preferable name.
+3. Instal dependencies:
+```
+npm i
+```
+4. Run the npm:
+```
+npm run upload
+```
