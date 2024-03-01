@@ -1,4 +1,4 @@
-# Create HTTP Server using Hapi Framework
+# Contact API using Hapi Framework
 
 ## prerequisites
 - Node.js version >= 12.x
