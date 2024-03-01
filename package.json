@@ -8,9 +8,6 @@
     "start": "node server.js"
   },
   "keywords": [],
-  "dependencies": {
-    "@hapi/hapi": "^20.2.1"
-  },
   "author": "",
   "license": "ISC"
 }
