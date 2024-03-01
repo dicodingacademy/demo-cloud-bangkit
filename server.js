@@ -1,26 +1,24 @@
-// load http module
-const http = require('http');
+// load Hapi module
+const Hapi = require('@hapi/hapi');
 
-const requestListener = (request, response) => {
-  response.setHeader('Content-Type', 'application/json'); // set the content-type manually
-  response.statusCode = 200; // set the status code manually
+(async () => {
+  // create HTTP server
+  const server = Hapi.server({ host: 'localhost', port: 3000 });
 
-  const { method, url } = request;
+  server.route([
+    {
+      method: 'GET',
+      path: '/',
+      handler: () => ({ message: 'You are doing GET' }),
+    },
+    {
+      method: 'POST',
+      path: '/',
+      handler: () => ({ message: 'You are doing POST' }),
+    },
+  ]);
 
-  // Routing response based on url & HTTP verb/method manually using if-else
-  if (url === '/' && method === 'GET') {
-    response.end(JSON.stringify({ message: 'You are doing GET' }));
-  } else if (url === '/' && method === 'POST') {
-    response.end(JSON.stringify({ message: 'You are doing POST' }));
-  } else {
-    response.end(JSON.stringify({ message: 'Unknown action'}))
-  }
-};
-
-// create a HTTP server
-const server = http.createServer(requestListener);
-
-// run the HTTP server
-server.listen(3000, 'localhost', () => {
-  console.log('Server running on http://localhost:3000');
-});
+  // run the HTTP server
+  await server.start();
+  console.log('server start at ', server.info.uri);
+})()

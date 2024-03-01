@@ -1,0 +1,16 @@
+{
+  "name": "demo-cloud-bangkit",
+  "version": "1.0.0",
+  "description": "- Node.js version >= 12.x",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "dependencies": {
+    "@hapi/hapi": "^20.2.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
