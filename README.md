@@ -1,10 +1,4 @@
-# Create HTTP Server using Hapi Framework
+# Intro to Neural Network
 
-## prerequisites
-- Node.js version >= 12.x
-
-Run the application:
-- Install dependencies:
-``npm install``
-- Run the application:
-``npm run start``
+## Courtesy of Google Developers Exercise
+(Intro To Neural Networks)[https://developers.google.com/machine-learning/crash-course/introduction-to-neural-networks/programming-exercise]
