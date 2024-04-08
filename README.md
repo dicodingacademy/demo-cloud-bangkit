@@ -1,4 +1,6 @@
-# Intro to Neural Network
+# Machine Learning Model
+This model is using image detection to detect rock, paper, scissors images.
 
-## Courtesy of Google Developers Exercise
-[Intro To Neural Networks](https://developers.google.com/machine-learning/crash-course/introduction-to-neural-networks/programming-exercise)
+# Dependencies
+1. Hapi Framework
+2. Tensorflow.js
