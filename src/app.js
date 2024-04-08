@@ -9,8 +9,7 @@ const { loadModel, predict } = require('./ml');
   // initializing HTTP server
   const server = Hapi.server({
     host: 'localhost',
-    port: 3000,
-    debug: { request: ['error'] }
+    port: 3000
   });
 
   server.route({
