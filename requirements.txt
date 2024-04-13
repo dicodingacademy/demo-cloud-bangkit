@@ -4,4 +4,3 @@ numpy ~= 1.23
 seaborn ~= 0.13
 tensorflowjs ~= 4.0
 tensorflow ~= 2.13
-jupyter~=1.0
