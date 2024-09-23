@@ -1,6 +1,2 @@
-# Machine Learning Model
-This model is using image detection to detect rock, paper, scissors images.
-
-# Dependencies
-1. Hapi Framework
-2. Tensorflow.js
+# Training Machine Learning Model
+This colab is an example of neural network model training to find the relationship between X and Y variable.
